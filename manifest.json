@@ -1,0 +1,16 @@
+{
+    "name": "Flash Benefícios Exporter",
+    "version": "1.0.0",
+    "description": "Exporter for your account balance.",
+    "manifest_version": 3,
+    "author": "Bruno Mayer Paixão",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Flash Benefícios Exporter"
+    },
+    "content_scripts": [{
+      "matches": ["*://*.flashapp.com.br/*"],
+      "js": ["content.js"]
+    }],
+    "permissions": ["activeTab"]
+}
